@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+.move-icon{
+    height: 50px;
+}
+
+.move-button{
+    height: 120px;
+    width: 120px;
+    border: 3px solid white;
+    background-color: transparent;
+    border-radius: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.result {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+/* .score {
+    margin-top: 60px;
+} */
+
+.reset-score-button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+div{
+    margin: 60px 0;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.red-color{
+    color: red;
+}
+.green-color{
+    color: rgb(0, 255, 0);
+}
+.gray-color{
+    color: gray;
+}
+@media (max-width: 450px){
+    .move-icon{
+        height: 30px;
+    }
+    
+    .move-button{
+        height: 75px;
+        width: 75px;
+        border: 2px solid white;
+        border-radius: 45px;
+        margin: 0 3px;
+    }
+    
+    .result {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    
+    .reset-score-button {
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+    
+    div{
+        margin: 30px 0;
+    }
+    .title{
+        font-size: 25px;
+    }
+}
