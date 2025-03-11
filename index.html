@@ -15,37 +15,32 @@
     <p class="js-result result">Play</p>
     <p class="js-moves"></p>
 
-    <div>
-        <button onclick="
-        playGame('rock')
-        " class="move-button">
-        <img src="images\rock-emoji.png" alt="Rock" class="move-icon"></button>
+    <div class="div-move-buttons">
+        <button class="move-button js-rock-button">
+            <img src="images\rock-emoji.png" alt="Rock" class="move-icon"></button>
 
-        <button onclick="
-        playGame('paper')
-        " class="move-button">
-        <img src="images/paper-emoji.png" alt="Paper" class="move-icon"></button>
+        <button class="move-button js-paper-button">
+            <img src="images/paper-emoji.png" alt="Paper" class="move-icon"></button>
 
-        <button onclick="
-        playGame('scissors')
-        " class="move-button">
-        <img src="images/scissors-emoji.png" alt="Scissors" class="move-icon"></button>
+        <button class="move-button js-scissors-button">
+            <img src="images/scissors-emoji.png" alt="Scissors" class="move-icon"></button>
     </div>
 
 
     <p class="js-score score"></p>
 
+    <div>
+        <button class="reset-score-button js-reset-score-button">
+            Reset</button>
+    
+        <button class="auto-play-button js-auto-play-button">
+            Auto Play</button>
+    </div>
+
     
 
-    <button
-    class="reset-score-button"
-    onclick="
-    score.wins = 0;
-    score.losses = 0;
-    score.draws = 0; 
-    localStorage.removeItem('score');
-    updateScoreElement();
-    ">Reset</button>
+    <p class="js-reset-confirmation"></p>
+
 
     <script src="script.js"></script>
 </body>
