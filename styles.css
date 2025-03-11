@@ -31,7 +31,9 @@ body {
     margin-top: 60px;
 } */
 
-.reset-score-button {
+.reset-score-button,
+.auto-play-button,
+.reset-confirm-button {
     background-color: white;
     border: none;
     font-size: 15px;
@@ -39,7 +41,17 @@ body {
     cursor: pointer;
 }
 
-div{
+.reset-confirm-button{
+    margin-left: 10px;
+}
+
+.div-reset-confirm-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.div-move-buttons{
     margin: 60px 0;
 }
 
@@ -80,7 +92,7 @@ div{
         padding: 5px 10px;
     }
     
-    div{
+    .div-move-buttons{
         margin: 30px 0;
     }
     .title{
@@ -110,7 +122,7 @@ div{
         padding: 5px 10px;
     }
     
-    div{
+    .div-move-buttons{
         margin: 30px 0;
     }
     .title{
